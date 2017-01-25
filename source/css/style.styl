@@ -26,7 +26,7 @@ body
   display: flex
   flex-direction: column
   antialias()
-  background: url( $background_banner_image ) no-repeat top center fixed
+  //background: url( $background_banner_image ) no-repeat top center fixed
   //background-size cover
   margin: 0
   padding: 0
@@ -112,6 +112,7 @@ body
 @import "_partial/archive"
 @import "_partial/comments"
 @import "_partial/footer"
+@import "_partial/solar"
 
 // Code
 @import "_highlight/" + highlight
@@ -178,9 +179,11 @@ pre code
     font-family: "Menlo", "Meslo LG", monospace;
     font-weight: 700;
     color: black;
+    background: white;
 .background
     width: 100%
     background-color: $color-background
+    //z-index: 10;
 
 .small 
     max-width: 130px;
@@ -188,4 +191,5 @@ pre code
     border-width: 2px;
     border-color: #fff;
     font-weight: 100;
+
 

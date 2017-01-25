@@ -1,3 +1,34 @@
-<div class="banner">HEADER CONTENT
+<div class="banner">Solar Theme
+<ul class="wrapper">
+  <div class="sun">
+    <div class="star"></div>
+  </div>
+  <div class="mercury">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="venus">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="earth">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="mars">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="jupiter">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+</ul>
+<script>
+window.onscroll = function() {scrollBanner()};
 
+function scrollBanner() {
+    document.getElementByClassName("wrapper").style.zoom = document.getElementByClassName("wrapper").style.zoom  / 0.1 ;
+
+}
+</script>
 </div>
