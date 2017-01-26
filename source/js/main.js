@@ -15,7 +15,7 @@ $(document).ready(function() {
 
             var topDistance = $("#menu > #nav").offset().top;
 
-            if ($('#menu').css('visibility') != 'hidden' && topDistance < 250) {
+            if ($('#menu').css('visibility') != 'hidden' && topDistance < 50) {
                 $("#menu > #nav").show();
             } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 100) {
                 $("#menu > #nav").hide();

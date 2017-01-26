@@ -2,9 +2,9 @@ nav:
   Home: /
   About: /about/
   Writing: /archives/
-  Projects: http://github.com/probberechts
+  Projects: http://github.com/tzvetkov75
 
-projects_url: http://github.com/probberechts
+projects_url: http://github.com/tzvetkov75
 
 customize:
     gravatar:
@@ -27,12 +27,12 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/probberechts/cactus-dark
+        github: https://github.com/tzvetkov75/solar-theme-hexo
         twitter: /
         facebook: /
         linkedin: /
     post_count: 5
-    highlight: lightcode
+    highlight: railscasts
     banner_image:  /images/bg_cactus.jpg
 
 # RSS
@@ -41,7 +41,7 @@ rss: false
 # Plugins
 plugins:
     disqus_shortname: # Disqus Comments Shortname
-    google_analytics: UA-86660611-1 # enter the tracking ID for your Google Analytics
+    google_analytics: # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
 miscellaneous:

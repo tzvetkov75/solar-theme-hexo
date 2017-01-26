@@ -1,4 +1,4 @@
-<div class="banner">Solar Theme
+<div class="banner"><%= config.title %>
 <ul class="wrapper">
   <div class="sun">
     <div class="star"></div>
@@ -24,11 +24,21 @@
   </div>
 </ul>
 <script>
-window.onscroll = function() {scrollBanner()};
 
 function scrollBanner() {
-    document.getElementByClassName("wrapper").style.zoom = document.getElementByClassName("wrapper").style.zoom  / 0.1 ;
+   
+    var z = document.getElementsByClassName("banner")[0].getBoundingClientRect().bottom / (
+       document.getElementsByClassName("banner")[0].getBoundingClientRect().bottom-document.getElementsByClassName("banner")[0].getBoundingClientRect().top)
+    
+    if (z<0) {
+      z = 0.01
+    }
 
+    document.getElementsByClassName("wrapper")[0].style.zoom  =  z
+    
 }
+
+window.onscroll = function() {scrollBanner()};
+
 </script>
 </div>

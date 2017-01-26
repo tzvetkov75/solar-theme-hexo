@@ -65,10 +65,10 @@
 /* scene wrapper */
 .wrapper{
   position:fixed;
-  margin: 0 auto;
+  //margin: 10px; //  auto;
   display:block;
   //margin-top: 200px;
-  perspective: 10000px;
+  perspective: 5000px;
 	perspective-origin: 60% 50%;
   transform: rotate(-10deg);
   width: inherit;
@@ -90,7 +90,7 @@
 .sun .star {
   width: 150px;
   height: 150px;
-  background: url(http://www.waynedunkley.com/img/solar_system/sun.png) no-repeat;
+  background: url(/images/sun.png) no-repeat;
   background-size: cover;
   border-radius: 250px;
   margin: 0 auto;
@@ -109,7 +109,7 @@
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background: transparent url(http://www.waynedunkley.com/img/solar_system/shadow.png) 0% 0% no-repeat;
+  background: transparent url(/images/shadow.png) 0% 0% no-repeat;
   background-size: cover;
   border-radius: 100%;
 }
@@ -123,7 +123,7 @@
 .mercury .planet {
   width:25px;
   height:25px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/mercury.png);
+  background-image: url(/images/mercury.png);
   animation: anti-spin 12s infinite linear;
 }
 .mercury .shadow {
@@ -139,7 +139,7 @@
 .venus .planet {
   width:48px;
   height:48px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/venus.png);
+  background-image: url(/images/venus.png);
   animation: anti-spin 15s infinite linear;
 }
 .venus .shadow {
@@ -155,7 +155,7 @@
 .earth .planet {
   width:50px;
   height:50px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/earth.png?v=2);
+  background-image: url(/images/earth.png?v=2);
   animation: anti-spin 20s infinite linear;
 }
 .earth .shadow {
@@ -171,7 +171,7 @@
 .mars .planet {
   width:32px;
   height:32px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/mars.png);
+  background-image: url(/images/mars.png);
   animation: anti-spin 30s infinite linear;
 }
 .mars .shadow {
@@ -187,7 +187,7 @@
 .jupiter .planet {
   width:128px;
   height:128px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/jupiter.png);
+  background-image: url(/images/jupiter.png);
   animation: anti-spin 50s infinite linear;
 }
 .jupiter .shadow {
