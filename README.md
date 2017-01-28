@@ -22,7 +22,7 @@ based on CSS 3D on the solar system  http://codepen.io/waynedunkley/pen/YPJWaz
 
 ## Features
 
-- draft tbd
+- responsive theme base
 
 ## Install
 
