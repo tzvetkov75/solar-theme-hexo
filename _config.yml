@@ -33,7 +33,20 @@ customize:
         linkedin: /
     post_count: 5
     highlight: railscasts
-    banner_image:  /images/bg_cactus.jpg
+
+# keept it like this to add the root path (probably a bug)
+root: ..
+
+solar:
+    # factor between 0 (fast), 1(normal), 2(very slow)  
+    speed: 1
+    sun_image: /images/sun.png
+    earth_image: /images/earth.png
+    jupiter_image: /images/jupiter.png
+    mars_image: /images/mars.png
+    mercury_image: /images/mercury.png
+    shadow_image: /images/shadow.png
+    venus_image: /images/venus.png
 
 # RSS
 rss: false

@@ -90,11 +90,11 @@
 .sun .star {
   width: 150px;
   height: 150px;
-  background: url(/images/sun.png) no-repeat;
+  background: url($sun_image) no-repeat;
   background-size: cover;
   border-radius: 250px;
   margin: 0 auto;
-  animation: spinsun 40s infinite linear;
+  animation: spinsun $solar_speed*40s infinite linear;
 }
 .planet {
   background-size: cover;
@@ -109,7 +109,7 @@
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background: transparent url(/images/shadow.png) 0% 0% no-repeat;
+  background: transparent url($shadow_image) 0% 0% no-repeat;
   background-size: cover;
   border-radius: 100%;
 }
@@ -117,79 +117,79 @@
   position: absolute;
   width: 300px;
   z-index:2;
-  animation: orbitmercury 12s infinite linear;
+  animation: orbitmercury $solar_speed*12s infinite linear;
   top: -7.5px; /*half of planets height to keep orbits in line*/
 }
 .mercury .planet {
   width:25px;
   height:25px;
-  background-image: url(/images/mercury.png);
-  animation: anti-spin 12s infinite linear;
+  background-image: url($mercury_image);
+  animation: anti-spin $solar_speed*12s infinite linear;
 }
 .mercury .shadow {
-  animation: shadow 12s infinite linear;
+  animation: shadow $solar_speed*12s infinite linear;
 }
 .venus {
   position: absolute;
   width: 506px;
   z-index:3;
-  animation: orbitvenus 15s infinite linear;
+  animation: orbitvenus $solar_speed*15s infinite linear;
   top: -19px;
 }
 .venus .planet {
   width:48px;
   height:48px;
-  background-image: url(/images/venus.png);
-  animation: anti-spin 15s infinite linear;
+  background-image: url($venus_image);
+  animation: anti-spin $solar_speed*15s infinite linear;
 }
 .venus .shadow {
-  animation: shadow 15s infinite linear;
+  animation: shadow $solar_speed*15s infinite linear;
 }
 .earth {
   position: absolute;
   width: 610px;
   z-index:4;
-  animation: orbitearth 20s infinite linear;
+  animation: orbitearth $solar_speed*20s infinite linear;
   top: -20px;
 }
 .earth .planet {
   width:50px;
   height:50px;
-  background-image: url(/images/earth.png?v=2);
-  animation: anti-spin 20s infinite linear;
+  background-image: url($earth_image);
+  animation: anti-spin $solar_speed*20s infinite linear;
 }
 .earth .shadow {
-  animation: shadow 20s infinite linear;
+  animation: shadow $solar_speed*20s infinite linear;
 }
 .mars {
   position: absolute;
   width: 706px;
   z-index:5;
-  animation: orbitmars 30s infinite linear;
+  animation: orbitmars $solar_speed*30s infinite linear;
   top: -11px;
 }
 .mars .planet {
   width:32px;
   height:32px;
-  background-image: url(/images/mars.png);
-  animation: anti-spin 30s infinite linear;
+  background-image: url($mars_image);
+  animation: anti-spin $solar_speed*30s infinite linear;
 }
 .mars .shadow {
-  animation: shadow 30s infinite linear;
+  animation: shadow $solar_speed*30s infinite linear;
 }
 .jupiter {
   position: absolute;
   width: 1100px;
   z-index:6;
-  animation: orbitjupiter 50s infinite linear;
+  animation: orbitjupiter $solar_speed*50s infinite linear;
   top: -64px;
 }
 .jupiter .planet {
   width:128px;
   height:128px;
-  background-image: url(/images/jupiter.png);
-  animation: anti-spin 50s infinite linear;
+  background-image: url($jupiter_image);
+  animation: anti-spin $solar_speed*50s infinite linear;
 }
 .jupiter .shadow {
-  animation: shadow 50s infinite linear;
+  animation: shadow $solar_speed*50s infinite linear;
 }

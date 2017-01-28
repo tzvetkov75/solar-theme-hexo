@@ -15,15 +15,12 @@ $(document).ready(function() {
 
             var topDistance = $("#menu > #nav").offset().top;
 
-            if ($('#menu').css('visibility') != 'hidden' && topDistance < 50) {
-                $("#menu > #nav").show();
-            } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 100) {
-                $("#menu > #nav").hide();
-            }
+            $("#menu > #nav").show();
             return false;
         } else {
             $('#menu').css('visibility', 'hidden');
             $('#menu-icon, #menu-icon-tablet').removeClass('active');
+
             return false;
         }
     });
@@ -35,18 +32,21 @@ $(document).ready(function() {
 
     if ($("#menu").length) {
         $(window).on('scroll', function() {
-            var topDistance = $("#menu > #nav").offset().top;
 
-            if ($('#menu').css('visibility') != 'hidden' && topDistance < 50) {
+            var topDistance = $(window).scrollTop();
+
+            if ($('#menu').css('visibility') != 'hidden' && topDistance < 10) {
                 $("#menu > #nav").show();
-            } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 100) {
+            } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 10) {
                 $("#menu > #nav").hide();
             }
 
-            if (!$("#menu-icon").is(":visible") && topDistance < 50) {
+            if (!$("#menu-icon").is(":visible") && topDistance < 10) {
+
                 $("#menu-icon-tablet").show();
                 $("#top-icon-tablet").hide();
-            } else if (!$("#menu-icon").is(":visible") && topDistance > 100) {
+            } else if (!$("#menu-icon").is(":visible") && topDistance > 10) {
+
                 $("#menu-icon-tablet").hide();
                 $("#top-icon-tablet").show();
             }
