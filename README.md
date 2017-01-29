@@ -20,7 +20,7 @@ based on CSS 3D on the solar system  http://codepen.io/waynedunkley/pen/YPJWaz
 - **Version** : 0.1
 - **Compatibility** : Hexo 3 or later
 
-## Features
+## <Features></Features>
 
 - responsive theme base
 

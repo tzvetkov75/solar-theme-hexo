@@ -8,7 +8,22 @@ if (!!$.prototype.justifiedGallery) { // if justifiedGallery method is defined
 }
 
 $(document).ready(function() {
-    $("#menu-icon, #menu-icon-tablet").click(function() {
+		
+     $(window).on('scroll', function() {
+	  
+        var z = $(".banner")[0].getBoundingClientRect().bottom / (
+       	$(".banner")[0].getBoundingClientRect().bottom - $(".banner")[0].getBoundingClientRect().top)
+    
+    	if (z<0) {
+      		z = 0.01
+    	}
+
+    	$(".wrapper")[0].style.zoom  =  z
+    	$(".wrapper")[0].style.MozTransform = "scale("+z+")"
+
+     });
+
+     $("#menu-icon, #menu-icon-tablet").click(function() {
         if ($('#menu').css('visibility') == 'hidden') {
             $('#menu').css('visibility', 'visible');
             $('#menu-icon, #menu-icon-tablet').addClass('active');
@@ -32,7 +47,6 @@ $(document).ready(function() {
 
     if ($("#menu").length) {
         $(window).on('scroll', function() {
-
             var topDistance = $(window).scrollTop();
 
             if ($('#menu').css('visibility') != 'hidden' && topDistance < 10) {

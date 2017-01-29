@@ -173,7 +173,12 @@ pre code
     padding: 1%
     color: $color-lightest;
     text-align: center
-    font-size: 40px
+    @media screen and (min-height:450px){
+      font-size: 40px
+    }
+    @media screen and (max-height:450px){
+      font-size: 15px
+    }
     font-family: "Menlo", "Meslo LG", monospace;
     font-weight: 600;
     background: $color-background;
