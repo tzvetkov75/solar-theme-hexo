@@ -1,10 +1,9 @@
 # Solar theme 
 
-A responsive, dark and simple [Hexo](http://hexo.io) theme for a personal website.
+A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
 - besed on theme [cacutus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
 - using [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz) by Wayne Dunkley 
-
 
 ## Summary
 
@@ -39,7 +38,7 @@ $ npm install hexo-pagination --save
 
 add 
 
-2. Change the `theme` property in the `config.yml` file.
+2. Change the `theme` property in the `config.yml` file (hexo config file).
 
 ```
 theme: solar
@@ -49,17 +48,16 @@ theme: solar
 
 ## Configuration
 
-It works out of the box. You want to adjust setting use file `_config.yml` in the theme directory `solar`, like
+You can to adjust personal setting in  `_config.yml` in the theme directory `solar`.
 
 - rotation speed
 - images of the planets and sun 
 - analytics 
 - RSS
-- social links
+- social links 
 - code highlight
 
-If you want to set some colors use file `css\_variables.styl`
-
+If you want to change some colors use file `css\_variables.styl`
 
 ## License
 MIT
