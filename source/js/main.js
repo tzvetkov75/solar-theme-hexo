@@ -8,22 +8,24 @@ if (!!$.prototype.justifiedGallery) { // if justifiedGallery method is defined
 }
 
 $(document).ready(function() {
-		
-     $(window).on('scroll', function() {
-	  
+
+    $(".banner")[0].css("visibility", "visible");
+
+    $(window).on('scroll', function() {
+
         var z = $(".banner")[0].getBoundingClientRect().bottom / (
-       	$(".banner")[0].getBoundingClientRect().bottom - $(".banner")[0].getBoundingClientRect().top)
-    
-    	if (z<0) {
-      		z = 0.01
-    	}
+            $(".banner")[0].getBoundingClientRect().bottom - $(".banner")[0].getBoundingClientRect().top)
 
-    	$(".wrapper")[0].style.zoom  =  z
-    	$(".wrapper")[0].style.MozTransform = "scale("+z+")"
+        if (z < 0) {
+            z = 0.01
+        }
 
-     });
+        $(".wrapper")[0].style.zoom = z
+        $(".wrapper")[0].style.MozTransform = "scale(" + z + ")"
 
-     $("#menu-icon, #menu-icon-tablet").click(function() {
+    });
+
+    $("#menu-icon, #menu-icon-tablet").click(function() {
         if ($('#menu').css('visibility') == 'hidden') {
             $('#menu').css('visibility', 'visible');
             $('#menu-icon, #menu-icon-tablet').addClass('active');

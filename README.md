@@ -25,7 +25,8 @@ A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
 ## Demo 
 
-    Demo at [Solar Demo](http://secdump.io/blog_12/public/)
+  -  Demo at [Solar Demo](http://secdump.io/blog_12/public)
+  
 
 ## Install
 
@@ -60,4 +61,4 @@ You can to adjust personal setting in  `_config.yml` in the theme directory `sol
 If you want to change some colors use file `css\_variables.styl`
 
 ## License
-MIT
+	MIT
