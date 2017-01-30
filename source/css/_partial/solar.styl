@@ -41,7 +41,7 @@
 @keyframes orbitjupiter {
   0% { z-index:6; transform: rotateY(270); }
   49% { z-index:6; }
-  50% { z-index:-6; }
+  50% { z-index:-6; }  
   99% { z-index:-6; }
   100%   { z-index:6; transform: rotateY(360deg); }
 }
@@ -61,7 +61,13 @@
   from { transform: rotateY(0) rotateX(73deg); }
   to   { transform: rotateY(-360deg) rotateX(73deg); }
 }
-
+        
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  75% {opacity: 0.8;}
+  100% {opacity: 1;}
+}
+         
 /* scene wrapper */
 .wrapper{
   position:fixed;
@@ -74,8 +80,9 @@
     transform: rotate(-10deg);
   }
   width: inherit;
-  
+  animation: fadeIn 10s;  
 }
+
 .wrapper > div {
   position: relative;
   margin: 0 auto;
@@ -88,6 +95,7 @@
   top: 0px;
   z-index: 1;
   height: 125px !important;
+  animation: fadeIn 5s;  
 }
 .sun .star {
   width: 150px;
@@ -185,6 +193,7 @@
   z-index:6;
   animation: orbitjupiter $solar_speed*50s infinite linear;
   top: -64px;
+  
 }
 .jupiter .planet {
   width:128px;

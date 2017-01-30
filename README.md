@@ -2,9 +2,8 @@
 
 A responsive, dark and simple [Hexo](http://hexo.io) theme for a personal website.
 
-based on cactus dark https://github.com/probberechts/cactus-dark.git
-
-based on CSS 3D on the solar system  http://codepen.io/waynedunkley/pen/YPJWaz
+- besed on theme [cacutus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
+- using [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz) by Wayne Dunkley 
 
 
 ## Summary
@@ -22,21 +21,45 @@ based on CSS 3D on the solar system  http://codepen.io/waynedunkley/pen/YPJWaz
 
 ## <Features></Features>
 
-- responsive theme base
+- responsive theme with 3D annimation in header
+- clean and structure optimaized for blog
+
+## Demo 
+
+    Demo at [Solar Demo](http://secdump.io/blog_12/public/)
 
 ## Install
 
-1. In the `root` directory:
+1. In the `root` directory of Hexo:
 
+```
+$ git clone https://github.com/tzvetkov75/solar-theme-hexo.git themes/solar
+$ npm install hexo-pagination --save
+```
+
+add 
 
 2. Change the `theme` property in the `config.yml` file.
 
+```
+theme: solar
+```
 
 3. Run: `hexo generate` and `hexo server`
 
 ## Configuration
 
-### Navigation
+It works out of the box. You want to adjust setting use file `_config.yml` in the theme directory `solar`, like
+
+- rotation speed
+- images of the planets and sun 
+- analytics 
+- RSS
+- social links
+- code highlight
+
+If you want to set some colors use file `css\_variables.styl`
+
 
 ## License
 MIT
