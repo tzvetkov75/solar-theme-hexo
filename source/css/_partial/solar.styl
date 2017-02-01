@@ -71,17 +71,13 @@
 /* scene wrapper */
 .wrapper{
   position:fixed;
-  //margin: 10px; //  auto;
-  display:block;
-  //margin-top: 200px;
   perspective: 5000px;
 	perspective-origin: 60% 50%;
   @media screen and (min-height:450px){
     transform: rotate(-10deg);
   }
   width: inherit;
-  animation: fadeIn 10s;  
-  visibility: hidden;
+  opacity:0;
 }
 
 .wrapper > div {
@@ -96,7 +92,6 @@
   top: 0px;
   z-index: 1;
   height: 125px !important;
-  animation: fadeIn 5s;  
 }
 .sun .star {
   width: 150px;
@@ -205,3 +200,25 @@
 .jupiter .shadow {
   animation: shadow $solar_speed*50s infinite linear;
 }
+
+
+.banner
+    height: 30vh
+    width: 100%
+    margin: 0
+    padding-top: 1%
+    color: $color-lightest;
+    text-align: center
+    background: $color-background;
+
+.blogtitel
+    position: absolute;
+    top: 20vh
+    width: 100%
+    margin: 0
+    padding: 1%
+    color: $color-lightest;
+    text-align: center
+    font-size: 40px
+    font-family: $font-family-body
+    font-weight: 700;

@@ -7,9 +7,15 @@ if (!!$.prototype.justifiedGallery) { // if justifiedGallery method is defined
     $('.article-gallery').justifiedGallery(options);
 }
 
+
+$(window).load(function() {
+    
+       $("#wrapper").fadeTo("slow",1);
+       $("#blogtitel").fadeOut(1000);
+});
+
 $(document).ready(function() {
 
-    $(".banner")[0].css("visibility", "visible");
 
     $(window).on('scroll', function() {
 
