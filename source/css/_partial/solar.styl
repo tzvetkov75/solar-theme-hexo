@@ -72,12 +72,11 @@
 .wrapper{
   position:fixed;
   perspective: 5000px;
-	perspective-origin: 60% 50%;
-  @media screen and (min-height:450px){
-    transform: rotate(-10deg);
-  }
+  perspective-origin: 60% 50%;
+  margin-top: 2vh;
   width: inherit;
   opacity:0;
+  padding:0;
 }
 
 .wrapper > div {
@@ -192,8 +191,8 @@
   
 }
 .jupiter .planet {
-  width:128px;
-  height:128px;
+  width:110px;
+  height:110px;
   background-image: url($jupiter_image);
   animation: anti-spin $solar_speed*50s infinite linear;
 }
@@ -216,7 +215,7 @@
     top: 20vh
     width: 100%
     margin: 0
-    padding: 1%
+    padding: 2%
     color: $color-lightest;
     text-align: center
     font-size: 40px
