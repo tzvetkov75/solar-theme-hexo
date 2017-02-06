@@ -1,6 +1,8 @@
 # Solar theme 
 
+---
 ![index](/images/Solar.png)
+---
 
 A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
