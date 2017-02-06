@@ -1,8 +1,10 @@
 # Solar theme 
 
+![index](/images/Solar.png)
+
 A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
-- besed on theme [cacutus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
+- based on theme [cacutus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
 - using [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz) by Wayne Dunkley 
 
 ## Summary
@@ -27,7 +29,6 @@ A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
   -  Demo at [Solar Demo](http://secdump.io/blog_12/public)
   
-
 ## Install
 
 1. In the `root` directory of Hexo:
@@ -49,7 +50,7 @@ theme: solar
 
 ## Configuration
 
-You can to adjust personal setting in  `_config.yml` in the theme directory `solar`.
+You can customize setting in  `_config.yml` in the theme directory `solar`.
 
 - rotation speed
 - images of the planets and sun 
