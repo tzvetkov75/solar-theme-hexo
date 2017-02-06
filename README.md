@@ -27,7 +27,7 @@ A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
 ## Demo 
 
-  -  Demo at [Solar Demo](http://secdump.io/blog_12/public)
+  -  Demo at [Solar](https://tzvetkov75.github.io/demo_blog/public/)
   
 ## Install
 
