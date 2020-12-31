@@ -4,7 +4,7 @@
 
 A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
-- based on theme [cacutus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
+- based on theme [cactus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
 - using [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz) by Wayne Dunkley 
 
 ## Summary
@@ -22,8 +22,8 @@ A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
 ## <Features></Features>
 
-- responsive theme with 3D annimation in header
-- clean and structure optimaized for blog
+- responsive theme with 3D animation in header
+- clean and structure optimized for blog
 
 ## Demo 
 
